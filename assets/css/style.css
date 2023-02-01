@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700;800&family=Montserrat:wght@100;400;500;700&family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Roboto:ital,wght@0,100;0,900;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
+}
+
+.navbar-brand {
+    position: relative;
+    background-image: url('../img/logo.png');
+    width: 110px;
+    height: 30px;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title {
+    background-color: maroon;
+    padding:15px;
+    border-radius: 15px;
+    color: #fff;
+    margin: 10px;
+}
+a:link {
+    text-decoration: none;
+    color:#fff;
+}
+a:hover {
+    background-color: black;
+    color: #fff;
+    box-shadow:black;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Movie Suggestion App</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand ml-5" href="#"></a>
+          <a class="title" href="#">Movie Recommendation Website</a>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid" style="max-width: 1400px">
+        <h1 class="text-center mb-3 text-uppercase">Welcome To Movie DB</h1>
+        <hr>
+      <div class="row">
+        <aside class="col-lg-3 py-3">
+          <h2 id="form-heading" class="mt-1 ml-5 h3 form-label">
+            Search for a film:
+          </h2>
+          <form id="search-form" class="form">
+            <div class="form-inline form-group">
+              <div class="input-group w-100">
+                <input
+                  class="form-input weather-search w-100 p-2 ml-5 mt-2"
+                  type="text"
+                  id="search-acotr"
+                  placeholder="Actor"
+                  aria-labelledby="form-heading"
+                  aria-controls="today forecast"
+                />
+                <input
+                  class="form-input weather-search w-100 p-2 ml-5 mt-2"
+                  type="text"
+                  id="search-year"
+                  placeholder="Year"
+                  aria-labelledby="form-heading"
+                  aria-controls="today forecast"
+                />
+                <input
+                  class="form-input weather-search w-100 p-2 ml-5 mt-2"
+                  type="text"
+                  id="search-ratingt"
+                  placeholder="Rating"
+                  aria-labelledby="form-heading"
+                  aria-controls="today forecast"
+                />
+                <div
+                  class="input-group-append mt-3 btn-block d-flex flex-column"
+                >
+                  <button
+                    type="submit"
+                    class="btn search-button p-2 ml-5 rounded-sm btn-dark"
+                    id="search-button"
+                    aria-label="submit search"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </aside>
+      </div>
+      <div class="col-lg-9 pb-3">
+        <section
+          id="result"
+          class="mx-0 mt-3 d-none"
+          role="region"
+          aria-live="polite"
+        >
+          <div class="card bg-light mb-3 p-3">
+            <div class="d-flex align-items-center" id="releaseDate">
+              <h2 class="fs-1 pl-2 py-2 mb-0 pr-0" id="movieTitle"></h2>
+              <h3 class="fs-1 pl-2 py-2 mb-0 pr-0" id="Actors"></h3>
+              <div class="fs-1" id="posterImg"></div>
+            </div>
+            <div class="pl-2" id="cardBody">
+              <p id="plot"></p>
+              <p id="rating"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- momentJs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" 
+    integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
+    crossorigin="anonymous"></script>
+    <!-- scriptjs -->
+    <script src="./assets/js/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script> -->
+  </body>
+</html>
