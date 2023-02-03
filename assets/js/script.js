@@ -9,7 +9,11 @@ $("#search-button").on("click", function (event) {
 
     event.preventDefault();
 
-    getActorID('Mark Hamill');
+    var actorInput = $('#search-acotr').val()
+
+    console.log(actorInput)
+
+    getActorID(actorInput);
 
 });
 
@@ -55,7 +59,7 @@ function getResponse() {
 
         var randomMovieTitle = randomMovie.title;
 
-        $('#movieTitle').text(randomMovie.vote_average);
+        $('#movieTitle').text(randomMovieTitle);
 
         var posterImage = "<img id='movie poster' src='https://image.tmdb.org/t/p/w600_and_h900_bestv2/" + randomMovie.poster_path + "'/>";
 
