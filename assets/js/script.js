@@ -15,7 +15,7 @@ $("#search-button").on("click", function (event) {
 
     getActorID(actorInput);
 
-
+    $('#result').removeClass('d-none')
 
 });
 
@@ -107,7 +107,6 @@ function findGenreID(genreName) {
     }
 
 }
-
 
 function getTrailer(movieTitle) {
 
