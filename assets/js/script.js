@@ -15,6 +15,8 @@ $("#search-button").on("click", function (event) {
 
     getActorID(actorInput);
 
+
+
 });
 
 function getActorID(actorName) {
@@ -67,7 +69,7 @@ function getResponse() {
 
         $('#plot').text(randomMovie.overview);
 
-        $('#rating').text(randomMovie.vote_average);
+        $('#rating').text("This move is rated a " + randomMovie.vote_average + " out of 10");
 
         getTrailer(randomMovieTitle)
 
@@ -121,6 +123,8 @@ function getTrailer(movieTitle) {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
+
+        console.log(queryURL)
 
         youtubeLink = youtubeLink + (response.items[0].id.videoId)
 

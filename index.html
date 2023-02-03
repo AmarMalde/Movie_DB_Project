@@ -49,14 +49,14 @@
                   aria-labelledby="form-heading"
                   aria-controls="genre"
                 />
-                <input
+                <!-- <input
                   class="form-input decade-search w-100 p-2 ml-5 mt-2"
                   type="text"
                   id="search-decade"
                   placeholder="Decade"
                   aria-labelledby="form-heading"
                   aria-controls="movies"
-                />
+                /> -->
                 <div
                   class="input-group-append mt-3 btn-block d-flex flex-column"
                 >
@@ -73,7 +73,7 @@
             </div>
           </form>
         </aside>
-        <div class="col-lg-9 pb-3 d-none">
+        <div class="col-lg-9 pb-3">
           <section
             id="result"
             class="mx-0 ml-5 mt-3"
@@ -85,10 +85,11 @@
                 <div class="fs-1" id="releaseDate"></div>
                 <h2 class="fs-1 pl-2 py-2 mb-0 pr-0" id="movieTitle"></h2>
                 <h3 class="fs-1 pl-2 py-2 mb-0 pr-0" id="Actors"></h3>
-                <div class="fs-1" id="posterImg"></div>
               </div>
+              
               <div class="pl-2" id="cardBody">
                 <p id="plot"></p>
+                <div class="fs-1" id="posterImg"></div>
                 <p id="rating"></p>
                 <p id="trailer"></p>
               </div>
@@ -99,11 +100,7 @@
     </div>
     <!-- momentJs -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
-      integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
