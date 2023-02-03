@@ -26,7 +26,7 @@ function getActorID(actorName) {
 
         actorId = response.results[0].id
         actorQuery = '&with_people=' + actorId
-        
+
         getResponse()
 
     })
@@ -53,12 +53,19 @@ function getResponse() {
 
         console.log(randomMovie);
 
-        $('#plot2').text(randomMovie.overview);
-        $('#rating2').text(randomMovie.vote_average);
         var randomMovieTitle = randomMovie.title;
 
-        getTrailer(randomMovieTitle)
+        $('#movieTitle').text(randomMovie.vote_average);
 
+        var posterImage = "<img id='movie poster' src='https://image.tmdb.org/t/p/w600_and_h900_bestv2/" + randomMovie.poster_path + "'/>";
+
+        document.getElementById('posterImg').innerHTML = posterImage;
+
+        $('#plot').text(randomMovie.overview);
+
+        $('#rating').text(randomMovie.vote_average);
+
+        getTrailer(randomMovieTitle)
 
     })
 }
@@ -102,25 +109,20 @@ function getTrailer(movieTitle) {
 
     var youtubeAPIKey = 'AIzaSyBXvsQQxQ5ndMrX1IeNe02xU2PWqQ60Fe8'
 
-    var queryURL = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q='+movieTitle+'&type=video&key=' + youtubeAPIKey
+    var queryURL = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=' + movieTitle + '&type=video&key=' + youtubeAPIKey
 
     var youtubeLink = 'https://www.youtube.com/embed/'
-
-    console.log(queryURL)
 
     $.ajax({
         url: queryURL,
         method: "GET"
     }).then(function (response) {
 
-        
         youtubeLink = youtubeLink + (response.items[0].id.videoId)
 
-        console.log(youtubeLink)
+        var trailerEmbed = '<iframe width="560" height="315" src=' + youtubeLink + ' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 
-        var trailerEmbed = '<iframe width="560" height="315" src=' + youtubeLink +  ' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-
-        document.getElementById('trailer2').innerHTML = trailerEmbed;
+        document.getElementById('trailer').innerHTML = trailerEmbed;
 
     })
 }
