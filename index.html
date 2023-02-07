@@ -66,13 +66,26 @@
                     id="search-button"
                     aria-label="submit search"
                   >
-                    Search
+                    Search</button
+                  ><br />
+                  <button
+                    class="btn search-button p-2 ml-5 rounded-sm btn-dark"
+                    id="clearfavorites"
+                    aria-label="clear favorite"
+                  >
+                    Clear Favorites
                   </button>
                 </div>
               </div>
             </div>
           </form>
+          <div>
+            <h2 id="favorite-movies" class="mt-1 ml-5 h3 form-label">
+              My Favorite Movies
+            </h2>
+          </div>
         </aside>
+
         <div class="col-lg-9 pb-3">
           <section
             id="result"
@@ -83,14 +96,27 @@
             <div class="card mb-3 p-3">
               <div class="d-flex align-items-center">
                 <div class="fs-1" id="releaseDate"></div>
+
                 <h2 class="fs-1 pl-2 py-2 mb-0 pr-0" id="movieTitle"></h2>
+
+                <button
+                  class="btn"
+                  id="addFavoriteMovieButton"
+                  style="
+                    margin-left: auto;
+                    margin-right: 0px;
+                    border: 1px solid #000;
+                  "
+                >
+                  Add to Favorites
+                </button>
                 <h3 class="fs-1 pl-2 py-2 mb-0 pr-0" id="Actors"></h3>
               </div>
-              
+
               <div class="pl-2" id="cardBody">
-                <p id="plot""></p>
+                <p id="plot"></p>
                 <div class="fs-1" id="posterImg"></div>
-                <p id="rating""></p>
+                <p id="rating"></p>
                 <p id="trailer"></p>
               </div>
             </div>
@@ -99,8 +125,7 @@
       </div>
     </div>
     <!-- momentJs -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
