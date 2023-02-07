@@ -15,13 +15,11 @@ function showFavMovies() {
   if (favoriteMovieArr !== null) {
     for (var i = 0; i < favoriteMovieArr.length; i++) {
       var movie = favoriteMovieArr[i];
-      var movieTitle = movie.Name;
-      var movieId = movie.id;
+      var movieTitle = movie;
 
       var movieTitle = $("<h5>");
-      movieTitle.attr("id", movieId);
 
-      movieTitle.text(movie.Name);
+      movieTitle.text(movie);
 
       $("#favorite-movies").append(movieTitle);
     }
@@ -92,10 +90,10 @@ function getResponse() {
     url: queryURL,
     method: "GET",
   }).then(function (response) {
+
     var randomMovie =
       response.results[Math.floor(Math.random() * response.results.length)];
 
-    console.log(randomMovie);
     ///////////////////////////
 
     $("#addFavoriteMovieButton").on("click", function (event) {
@@ -107,12 +105,9 @@ function getResponse() {
         localMoviesArr = [];
       }
 
-      var movie = {
-        Name: randomMovie.title,
-        id: randomMovie.id,
-      };
+      localMoviesArr.push(randomMovie.title);
 
-      localMoviesArr.push(movie);
+      localMoviesArr = Array.from(new Set(localMoviesArr))
 
       localStorage.setItem("favoriteMovieArr", JSON.stringify(localMoviesArr));
       showFavMovies();
