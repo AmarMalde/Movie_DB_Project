@@ -1,4 +1,4 @@
-//initialising variables/ arrays used throughout the code
+//initialising variables/ arrays used throughout the code and in difference functions
 var actorId = "";
 var genreID = "";
 var actorQuery = "";
