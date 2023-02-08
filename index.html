@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=“en”>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset=“UTF-8" />
+    <meta http-equiv=“X-UA-Compatible” content=“IE=edge” />
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      rel=“stylesheet”
+      href=“https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css”
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel=“stylesheet” href=“assets/css/style.css” />
     <title>Movie Suggestion Engine</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand ml-5" href="#"></a>
-          <a class="title text-uppercase" href="#"
+      <!-- Navbar with logo and Movie recommendation engine -->
+      <nav class=“navbar navbar-expand-lg bg-body-tertiary”>
+        <div class=“container-fluid”>
+          <a class=“navbar-brand ml-5” href=“#”></a>
+          <a class=“title text-uppercase” href=“#”
             >Movie Recommendation Engine</a
           >
         </div>
       </nav>
     </header>
+      <!-- Content container -->
     <div class="container-fluid" style="max-width: 1400px">
       <h1 class="text-center mb-3 text-uppercase">Welcome To Movie DB</h1>
       <hr />
@@ -30,6 +32,7 @@
           <h2 id="form-heading" class="mt-1 ml-5 h3 form-label">
             Search for a film:
           </h2>
+          <!-- Search form inputs for actor and genre with search and clear favourites buttons -->
           <form id="search-form" class="form">
             <div class="form-inline form-group">
               <div class="input-group w-100">
@@ -85,7 +88,7 @@
             </h2>
           </div>
         </aside>
-
+        <!-- Section for search results and add favourite movie button-->
         <div class="col-lg-9 pb-3">
           <section
             id="result"
