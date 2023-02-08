@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700;800&family=Montserrat:wght@100;400;500;700&family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Roboto:ital,wght@0,100;0,900;1,400;1,700&display=swap");
 
+/* targets body of html */
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 800;
@@ -9,6 +10,7 @@ body {
   text-align: center;
 }
 
+/* targets navbar-brand class with logo linked */
 .navbar-brand {
   position: relative;
   background-image: url("../img/logo.png");
@@ -20,6 +22,7 @@ body {
   background-position: center;
 }
 
+/* targets title class */
 .title {
   background-color: maroon;
   padding: 15px;
@@ -27,10 +30,14 @@ body {
   color: #fff;
   margin: 10px;
 }
+
+/* targets unvisited links */
 a:link {
   text-decoration: none;
   color: #fff;
 }
+
+/* targets a link when mouse hovers it */
 a:hover {
   background-color: black;
   color: #fff;
