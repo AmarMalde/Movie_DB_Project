@@ -6,10 +6,9 @@ Movie DB will suggest a movie based on the user's inputted criteria. It will ret
 
 The user can also saved movies to a list of favourites to watch later
 
-
 ## Installation
 
-No installation necessary! However an internet browser is required and Google Chrome is reccomended. Link to website is: https://amarmalde.github.io/Work-Day-Scheduler/ and it should look similar to the below image.
+No installation necessary! However an internet browser is required and Google Chrome is reccomended. Link to website is: https://amarmalde.github.io/Movie_DB_Project/ and it should look similar to the below image.
 
 ![screenshot](./assets/img/screenshot.png)
 
