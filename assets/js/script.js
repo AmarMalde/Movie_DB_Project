@@ -165,7 +165,7 @@ function getResponse() {
     document.getElementById("posterImg").innerHTML = posterImage;
 
 
-    // getTrailer(randomMovieTitle);
+    getTrailer(randomMovieTitle);
   });
 }
 
